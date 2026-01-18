@@ -20,7 +20,7 @@ dnf5 install -y tmux
 # dnf5 -y copr disable ublue-os/staging
 
 dnf5 -y copr enable avengemedia/dms
-dnf5 -y install dms niri
+dnf5 -y install dms niri xwayland-satellite swaybg swayidle grim slurp
 
 dnf5 -y copr disable avengemedia/dms
 
