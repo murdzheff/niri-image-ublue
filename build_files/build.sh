@@ -19,7 +19,7 @@ dnf5 install -y tmux
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-dnf5 -y install niri xwayland-satellite swaybg swayidle grim slurp
+dnf5 -y install niri xwayland-satellite swaybg swayidle grim slurp nwg-look
 
 
 
