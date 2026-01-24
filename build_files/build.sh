@@ -12,6 +12,8 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 
+
+dnf5 -y copr enable solopasha/hyprland
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -21,7 +23,7 @@ dnf5 install -y tmux
 
 dnf5 -y install niri xwayland-satellite hyprland swaybg swayidle grim slurp
 
-
+dnf5 -y copr disable solopasha/hyprland
 
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 #### Example for enabling a System Unit File
