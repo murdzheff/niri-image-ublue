@@ -20,7 +20,9 @@ dnf5 -y copr enable solopasha/hyprland
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-dnf5 -y install hyprland hyprpaper hyprlock hyprshot hyprcursor hypridle allacritty  grim slurp
+dnf5 -y install hyprland hyprpaper hyprlock hyprshot hyprcursor hypridle kitty  grim slurp
+
+dnf5 -y install xdg-desktop-portal-hyprland hyprpolkitagent hyprsunset satty cliphist nwg-clipman hyprpanel
 
 dnf5 -y copr disable solopasha/hyprland
 
