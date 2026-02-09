@@ -22,7 +22,7 @@ dnf5 -y copr enable solopasha/hyprland
 
 dnf5 -y install hyprland hyprpaper hyprlock hyprshot hyprcursor hypridle kitty  grim slurp
 
-dnf5 -y install  xdg-desktop-portal-hyprland hyprpolkitagent hyprsunset satty cliphist nwg-clipman hyprpanel
+dnf5 -y install wofi xdg-desktop-portal-hyprland hyprpolkitagent hyprsunset satty cliphist nwg-clipman hyprpanel
 
 dnf5 -y copr disable solopasha/hyprland
 
