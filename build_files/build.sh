@@ -15,16 +15,17 @@ dnf5 install -y tmux
 
 # Use a COPR Example:
 #
-# dnf5 -y copr enable ublue-os/staging
+dnf5 -y copr enable solopasha/hyprland
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-dnf5 -y install niri xwayland-satellite swaybg swayidle grim slurp
+dnf5 -y install hyprland hyprpaper hyprlock hyprshot hyprcursor hypridle allacritty  grim slurp
 
+dnf5 -y copr disable solopasha/hyprland
 
-dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+#dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 #### Example for enabling a System Unit File
-dnf5 -y install noctalia-shell
+#dnf5 -y install noctalia-shell
 
 systemctl enable podman.socket
